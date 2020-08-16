@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+:root {
+    /* tokoo variables */
+    --tokoo-yellow : #FFD740;
+    --tokoo-light-yellow : #FFE082;
+    --tokoo-grey : #E0E0E0;
+
+    /* basic variables */
+    --background : #FAFAFA;
+    --primary-color : black;
+    --secondary-color : white;
+    --accent : #C79A00;
+    --transparant-b3 : rgba(0, 0, 0, 0.03);
+
+    /* fonts */
+    --title-font : 'Montserrat', sans-serif;
+    --body-font : 'Work Sans', sans-serif;
+
+    --header-1-size : 64px;
+    --header-2-size : 38px;
+    --body-size : 18px;
+
+    /* navs */
+    --nav-background : white;
+
+    /* radius */
+    --primary-radius : 18px;
+    --secondary-radius : 12px;
+}
+
+
+html {
+    background: var(--background);
+}
+
+body {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-family: var(--body-font);
+}
+
+h1 {
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    font-size: var(--header-1-size);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    font-size: var(--header-2-size);
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* header */
+header {
+    margin-bottom: 48px;
+}
+.navbar {
+    padding: 8px;
+    background-color: var(--nav-background);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+}
+.nav-logo {
+    height: 36px;
+    width: auto;
+}
+.navbar-item img {
+    max-height: none;
+}
+.navbar-item, .navbar-link {
+    color: var(--primary-color);
+    border-radius: 12px;
+}
+#nav-toko .navbar-item:hover{
+    font-weight: 700;
+    color: var(--primary-color);
+    background-color: var(--transparant-b3);
+}
+#header-section-toko, #product, #article, #link {
+    padding: 60px 0px;
+    border-bottom: 2px solid var(--transparant-b3);
+}
+
+.article-section-tokoo-title {
+    margin-bottom: 24px;
+}
+.header-image-tokoo img {
+    border-radius: var(--primary-radius);
+    filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.15));;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* search & tags*/
+.search {
+    background-color: var(--transparant-b3);
+    border: none;
+    border-radius: var(--secondary-radius);
+    padding: 16px;
+    font-size: 18px;
+    font-family: var(--body-font);
+    margin: 0px 12px;
+}
+.icon-search {
+    background-color: var(--primary-color);
+    border-radius: var(--secondary-radius);
+    color: var(--secondary-color);
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon-search:hover {
+    color: var(--secondary-color);
+}
+.icon-search ion-icon{
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.tags {
+    margin-bottom: 40px !important;
+}
+.tag-active {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    font-weight: 700;
+}
+
+/* link */
+.link-group {
+    margin-top: 42px;
+}
+.link-item {
+    background: #607D8B;
+    padding: 24px;
+    display: flex;
+    border-radius: var(--secondary-radius);
+    margin: 20px 0px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.link-icon {
+    height: 100%;
+    font-size: 32px;
+    margin-right: 24px;
+}
+
+.link-item.facebook {
+    background-color: #2A6FD7;
+}
+.link-item.instagram {
+    background-color: #CA2889;
+}
+.link-item.whatsapp {
+    background-color: #29B479;
+}
+.link-item.blibli {
+    background-color: #42A5F5;
+}
+
+/* card */
+.card {
+    border-radius: var(--primary-radius);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.3);
+}
+.card .content {
+    padding-top: 6px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 125%;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 18px 18px 0px 0px;
+}
+.card-description-tokoo {
+    margin: 6px 0px;
+}
+.card-title-tokoo {
+    font-family: var(--title-font);
+    color: var(--primary-color) !important;
+    font-weight: 700 !important;
+    margin: 0px !important;
+}
+.price-tokoo {
+    margin: 6px 0px !important;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* button */
+.button {
+    border: none; 
+    border-radius: var(--secondary-radius);
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
