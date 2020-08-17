@@ -72,6 +72,10 @@ header {
     height: 36px;
     width: auto;
 }
+.navbar-burger span{
+    height: 2.5px;
+    border-radius: 12px;
+}
 .navbar-item img {
     max-height: none;
 }
