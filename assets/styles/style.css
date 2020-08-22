@@ -118,7 +118,8 @@ header {
 #header {
     margin-top: 64px;
 }
-.header-image img{
+.header-img img{
+    object-fit: cover;
     border-radius: var(--primary-radius);
 }
 
