@@ -16,6 +16,16 @@
     --page-text-subtitle-color: black;
     --page-section-border-color: rgba(0, 0, 0, 0.05);
     --page-footer-text-color: rgba(0, 0, 0, 0.5);
+    --page-button-1-active-background-color : white; 
+    --page-button-1-active-color : black; 
+    --page-button-1-unactive-background-color : white; 
+    --page-button-1-unactive-color : black;
+    
+    /* buyying page */
+    --buyying-button-buy-color :  black;
+    --buyying-button-buy-background-color :#FFD740;
+    --buyying-button-ask-color :  black;
+    --buyying-button-ask-background-color :#E0E0E0;
 
     /* card */
     --card-background-color : white;
@@ -43,9 +53,16 @@
     --shadow-0-1 : 0px 0px 24px rgba(0, 0, 0, 0.1);
     --shadow-0-15 : 0px 0px 24px rgba(0, 0, 0, 0.15);
 
+    /* transparant */
+    --t-5 : rgba(0, 0, 0, 0.05);
+    --t-15 : rgba(0, 0, 0, 0.15);
+
     /* radius */
     --primary-radius : 18px;
     --secondary-radius : 12px;
+    --third-radius : 8px;
+    --fourth-radius : 6px;
+
 }
 
 /* preset */
@@ -84,6 +101,10 @@ h3 {
     padding: 48px 0px; 
     border-bottom: 1px solid var(--page-section-border-color);
 }
+.type-section.two {
+    padding: 42px 0px; 
+    border-bottom: 1px solid var(--page-section-border-color);
+}
 
 /* header & navbars */
 header {
@@ -114,7 +135,23 @@ header {
     color: var(--nav-text-color) !important;
 }
 
-/* header image */
+/* buying pages */
+.buy-info-field {
+    background: var(--t-5);
+    border-radius: var(--primary-radius);
+    padding: 0px 24px;
+    overflow: hidden;
+}
+.buy-info-field div {
+    padding: 24px 0px;
+    border-bottom: 1px solid var(--t-5);
+}
+
+.buy-info-field div:last-child {
+    border-bottom: none !important;
+}
+
+/* header */
 #header {
     margin-top: 64px;
 }
@@ -123,12 +160,20 @@ header {
     border-radius: var(--primary-radius);
 }
 
+/* image */
+.image img{
+    border-radius: var(--primary-radius) !important;
+}
+.image.radius-s img{
+    border-radius: var(--third-radius) !important;
+}
+
 /* card */
 .card {
     background-color: var(--card-background-color);
     border-radius: var(--primary-radius);
     height: 100%;
-    border: 1px solid #EAEAEA;
+    border: 1px solid var(--card-border-color);
     box-shadow: none;
 }
 
@@ -139,6 +184,7 @@ header {
 
 .card img {
     border-radius:  var(--primary-radius) var(--primary-radius) 0px 0px;
+    object-fit: cover !important;
     padding: 0px !important;
 }
 
@@ -202,6 +248,7 @@ header {
 footer div {
     padding: 48px;
     text-align: center;
+    font-size: 16px;
     color: var(--page-footer-text-color);
 }
 
@@ -209,11 +256,40 @@ footer div {
 .button {
     border: none; 
     border-radius: var(--secondary-radius);
+    font-weight: 700;
 }
+.button:hover {
+    box-shadow: var(--shadow-0-1);
+}
+.button.page-buy.buy {
+    background-color: var(--buyying-button-buy-background-color);
+    color: var(--buyying-button-buy-color);
+}
+.button.page-buy.ask {
+    background-color: var(--buyying-button-ask-background-color);
+    color: var(--buyying-button-ask-color);
+}
+
 
 /* others */
 .centered {
     text-align: center;
+}
+
+.box-shadow {
+    box-shadow: var(--shadow-0-1);
+}
+
+/* media query */
+@media only screen and (min-width: 1000px) {
+    .column.buy-info {
+        padding-left: 38px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .column.buy-info {
+        margin-top: 24px;
+    }
 }
 
 

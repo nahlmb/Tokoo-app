@@ -3,6 +3,7 @@ const injectTheme = (themeVars, newCss) => {
 
         const root = document.documentElement;
         for(var key in themeVars) {
+            console.log(key);
             root.style.setProperty(key, themeVars[key])
         }
     }
