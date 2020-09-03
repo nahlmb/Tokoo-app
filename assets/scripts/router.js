@@ -24,5 +24,20 @@ router.on({
             '--card-desc-color' : '#9E9E9E'
         })
         injectPage('/component/examples/banana/index.html')
+    },
+    '/banana/detail' : () => {
+        injectTheme({
+            '--page-background-color' : "#FFF8E1",
+            '--card-background-color' : 'white',
+            '--card-border-color' : 'white',
+            '--card-title-color' : 'black',
+            '--card-price-color' : '#FFB301',
+            '--card-desc-color' : '#9E9E9E',
+            '--buyying-button-buy-color' :  'black',
+            '--buyying-button-buy-background-color' : '#FFC107',
+            '--buyying-button-ask-color' :  'white',
+            '--buyying-button-ask-background-color' : 'black'
+        })
+        injectPage('/component/examples/banana/detail.html')
     }
 }).resolve()
